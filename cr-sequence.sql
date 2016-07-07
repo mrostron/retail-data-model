@@ -1,11 +1,12 @@
 CREATE SEQUENCE customer_seq;
-CREATE SEQUENCE store_seq;
 CREATE SEQUENCE employee_seq;
+CREATE SEQUENCE store_seq;
+CREATE SEQUENCE person_seq;
+CREATE SEQUENCE company_seq;
 CREATE SEQUENCE sale_seq;
-CREATE SEQUENCE sale_line_seq;
 CREATE SEQUENCE product_seq;
+CREATE SEQUENCE category_seq;
 CREATE SEQUENCE shipper_seq;
 CREATE SEQUENCE supplier_seq;
 CREATE SEQUENCE location_seq;
-CREATE SEQUENCE category_seq;
 CREATE SEQUENCE replenishment_seq;

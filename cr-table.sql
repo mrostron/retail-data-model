@@ -11,6 +11,17 @@ CREATE TABLE customers (
 
 ---------------------------------
 
+CREATE TABLE employees (
+    employeeid         integer not null default nextval('employee_seq')
+   ,personid           integer not null
+   ,storeid            integer not null
+   ,title              text
+   ,hiredate           date
+   ,reportsto          integer
+);
+
+---------------------------------
+
 CREATE TABLE stores (
     storeid            integer not null default nextval('store_seq')
    ,locationid         integer not null
@@ -19,19 +30,23 @@ CREATE TABLE stores (
 
 ---------------------------------
 
-CREATE TABLE employees (
-    employeeid         integer not null default nextval('employee_seq')
-   ,storeid            integer not null
-   ,lastname           text
+CREATE TABLE persons (
+    personid           integer not null default nextval('person_seq')
+   ,locationid         integer not null
    ,firstname          text
-   ,title              text
-   ,titleofcourtesy    text
+   ,lastname           text
    ,birthdate          date
-   ,hiredate           date
-   ,photo              bytea
-   ,notes              text
-   ,reportsto          integer
-   ,photopath          text
+   ,sex                text
+   ,homepage           text
+);
+
+---------------------------------
+
+CREATE TABLE companies (
+    companyid          integer not null default nextval('company_seq')
+   ,locationid         integer not null
+   ,companyname        text
+   ,homepage           text
 );
 
 ---------------------------------
@@ -75,7 +90,7 @@ CREATE TABLE categories (
     categoryid        integer not null default nextval('category_seq')
    ,categoryname      text
    ,description       text
-   ,picture           bytea   -- !!!??
+   ,picture           text
 );
 
 ---------------------------------
@@ -83,9 +98,9 @@ CREATE TABLE categories (
 CREATE TABLE shippers (
     shipperid      integer not null default nextval('shipper_seq')
    ,locationid     integer not null
-   ,companyname    text
-   ,contactname    text
-   ,contacttitle   text
+   ,companyid      integer
+   ,contactid          text -- personid
+   ,contacttitle       text
 );
 
 ---------------------------------
@@ -93,10 +108,9 @@ CREATE TABLE shippers (
 CREATE TABLE suppliers (
     supplierid     integer not null default nextval('supplier_seq')
    ,locationid     integer not null
-   ,companyname    text
-   ,contactname    text
-   ,contacttitle   text
-   ,homepage       text
+   ,companyid      integer
+   ,contactid          text -- personid
+   ,contacttitle       text
 );
 
 ---------------------------------
