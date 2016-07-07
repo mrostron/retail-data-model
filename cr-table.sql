@@ -4,6 +4,7 @@
 CREATE TABLE customers (
     customerid          integer not null default nextval('customer_seq')
    ,locationid          integer not null
+   ,personid            integer not null
    ,companyname         text
    ,contactname         text
    ,contacttitle        text
@@ -78,6 +79,7 @@ CREATE TABLE sale_items (
 CREATE TABLE products (
     productid         integer not null default nextval('product_seq')
    ,productname       text
+   ,productdesc       text
    ,supplierid        integer
    ,categoryid        integer
    ,quantity          text
