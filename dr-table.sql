@@ -12,12 +12,3 @@ DROP TABLE if exists shippers               CASCADE;
 DROP TABLE if exists suppliers              CASCADE;
 DROP TABLE if exists locations              CASCADE;
 
--- !!!?? keep?
-DROP TABLE if exists employeeterritories    CASCADE;
-DROP TABLE if exists region                 CASCADE;
-DROP TABLE if exists territories            CASCADE;
-DROP TABLE if exists usstates               CASCADE;
-DROP TABLE if exists customercustomerdemo   CASCADE;
-DROP TABLE if exists customerdemographics   CASCADE;
-
-

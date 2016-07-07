@@ -1,5 +1,5 @@
 \i config.sql
-\i dr-new-dm-tbl.sql
-\i dr-new-dm-ind.sql
-\i dr-new-dm-seq.sql
-\i dr-new-dm-sch.sql
+\i dr-table.sql
+\i dr-index.sql
+\i dr-sequence.sql
+\i dr-schema.sql
