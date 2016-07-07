@@ -82,7 +82,6 @@ CREATE TABLE products (
    ,productdesc       text
    ,supplierid        integer
    ,categoryid        integer
-   ,quantity          text
    ,unitprice         numeric
 );
 
