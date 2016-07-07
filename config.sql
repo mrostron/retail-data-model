@@ -1,5 +1,5 @@
 
-\set schema new_dm
+\set schema retail
 
 SET search_path = :schema, public, pg_catalog;
 
