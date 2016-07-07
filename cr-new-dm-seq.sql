@@ -1,0 +1,17 @@
+CREATE SEQUENCE customer_seq;
+CREATE SEQUENCE store_seq;
+CREATE SEQUENCE employee_seq;
+CREATE SEQUENCE sale_seq;
+CREATE SEQUENCE sale_line_seq;
+CREATE SEQUENCE product_seq;
+CREATE SEQUENCE shipper_seq;
+CREATE SEQUENCE supplier_seq;
+CREATE SEQUENCE location_seq;
+CREATE SEQUENCE category_seq;
+CREATE SEQUENCE replenishment_seq;
+--CREATE SEQUENCE employeeterritory_seq;
+--CREATE SEQUENCE region_seq;
+--CREATE SEQUENCE territory_seq;
+--CREATE SEQUENCE usstate_seq;
+--CREATE SEQUENCE customercustomerdemo_seq;
+--CREATE SEQUENCE customerdemographic_seq;

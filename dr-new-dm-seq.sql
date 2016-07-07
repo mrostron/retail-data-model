@@ -1,0 +1,16 @@
+DROP SEQUENCE if exists customer_seq;
+DROP SEQUENCE if exists store_seq;
+DROP SEQUENCE if exists employee_seq;
+DROP SEQUENCE if exists sale_seq;
+DROP SEQUENCE if exists sale_line_seq;
+DROP SEQUENCE if exists product_seq;
+DROP SEQUENCE if exists category_seq;
+DROP SEQUENCE if exists shipper_seq;
+DROP SEQUENCE if exists supplier_seq;
+DROP SEQUENCE if exists location_seq;
+DROP SEQUENCE if exists employeeterritory_seq;
+DROP SEQUENCE if exists region_seq;
+DROP SEQUENCE if exists territory_seq;
+DROP SEQUENCE if exists usstate_seq;
+DROP SEQUENCE if exists customercustomerdemo_seq;
+DROP SEQUENCE if exists customerdemographic_seq;
