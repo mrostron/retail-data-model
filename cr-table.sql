@@ -78,10 +78,10 @@ CREATE TABLE sale_items (
 
 CREATE TABLE products (
     productid         integer not null default nextval('product_seq')
-   ,productname       text
-   ,productdesc       text
-   ,supplierid        integer
-   ,categoryid        integer
+   ,productname       text    not null
+   ,productdesc       text    not null
+   ,supplierid        integer not null
+   ,categoryid        integer not null
    ,unitprice         numeric
 );
 
@@ -89,9 +89,8 @@ CREATE TABLE products (
 
 CREATE TABLE categories (
     categoryid        integer not null default nextval('category_seq')
-   ,categoryname      text
-   ,description       text
-   ,picture           text
+   ,categoryname      text    not null
+   ,categoryparent    text    not null
 );
 
 ---------------------------------
