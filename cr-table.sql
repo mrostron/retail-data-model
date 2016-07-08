@@ -5,8 +5,8 @@ CREATE TABLE customers (
     customerid          integer not null default nextval('customer_seq')
    ,locationid          integer not null
    ,personid            integer not null
-   ,companyname         text
-   ,contactname         text
+   ,companyid           integer
+   ,contactid           integer
    ,contacttitle        text
 );
 
@@ -97,21 +97,21 @@ CREATE TABLE categories (
 ---------------------------------
 
 CREATE TABLE shippers (
-    shipperid      integer not null default nextval('shipper_seq')
-   ,locationid     integer not null
-   ,companyid      integer
-   ,contactid          text -- personid
-   ,contacttitle       text
+    shipperid         integer not null default nextval('shipper_seq')
+   ,locationid        integer not null
+   ,companyid         integer
+   ,contactid         integer -- personid
+   ,contacttitle      text
 );
 
 ---------------------------------
 
 CREATE TABLE suppliers (
-    supplierid     integer not null default nextval('supplier_seq')
-   ,locationid     integer not null
-   ,companyid      integer
-   ,contactid          text -- personid
-   ,contacttitle       text
+    supplierid        integer not null default nextval('supplier_seq')
+   ,locationid        integer not null
+   ,companyid         integer
+   ,contactid         integer -- personid
+   ,contacttitle      text
 );
 
 ---------------------------------
